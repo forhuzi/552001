@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style-verify.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./app.js" defer></script>
+    <link rel = "icon" href="./image/bpcup.png" type = "image/png">
+    <title>Verify</title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="./audio/tiengchimhot.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        // Get a reference to the audio element
+        const audio = document.getElementById('myAudio');
+        const delay = 10000;
+        
+        // Function to autoplay the audio after the specified delay
+        function autoplayAudio() {
+            audio.play();
+        }
+        // Use setTimeout to trigger autoplay after the specified delay
+        setTimeout(autoplayAudio, delay);
+    </script>
+    <div class="sub_content">
+        <h1>ENTER NUMBERS YOU THINK RIGHT NOW</h1>
+        <form class="info" id="myform">
+            <div>
+                <p class="frame">
+                    <style>
+                    /* Hide number input spinner controls */
+                    input[type="number"]::-webkit-inner-spin-button,
+                    input[type="number"]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        margin: 0;
+                    }
+                    </style>
+                    <input type="number" id="number" name="number" placeholder="_ _ _ _ _ _" required/>
+                    <p class="frame login">
+                        <input class="login" type="submit" value="CLICK HERE" id="submit"/>
+                    </p>
+                </p>
+            </div>
+        </form>
+        <h2 id="resultMessage" style="display: none;"></h2> 
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the form and result message elements
+            const form = document.getElementById('myform');
+            const resultMessage = document.getElementById('resultMessage');
+
+            // Add an event listener to the form submission
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the input value
+                const inputValue = document.getElementById('number').value;
+
+                // Check if the input value is equal to "552001"
+                if (inputValue === '552001') {
+                    // Redirect the user to a new page
+                    h1Element.style.display = 'none';
+                    window.location.href = './';
+                } else {
+                    // Display a notification and require the user to re-enter
+                    resultMessage.textContent = 'RE-ENTER UNTIL TRUE';
+                }
+            });
+        });
+
+        const h1Element = document.getElementById('resultMessage');
+        // Get references to the button and the <h1> element
+        const showButton = document.getElementById('submit');
+
+        // Add a click event listener to the button
+        showButton.addEventListener('click', function () {
+            // Show the <h1> element
+            h1Element.style.display = 'block';
+
+            // Use setTimeout to hide it after 2 seconds
+            setTimeout(function () {
+                h1Element.style.display = 'none'; // Hide the element
+            }, 1000); // 2000 milliseconds = 2 seconds
+        });
+
+        
+    </script>
+</body>
+</html>
