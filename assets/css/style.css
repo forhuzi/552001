@@ -6,8 +6,6 @@
 }
 body{
     /* background: rgb(255, 218, 232); */
-    cursor: url(./image/rocketcartoon.jpg);
-    /* cursor:; */
     background: rgb(245, 169, 187);
     display: flex;
     justify-content: center;
@@ -35,7 +33,6 @@ body{
 }
 .heartItem.item2{
     position: relative;
-    /* left: 4%; */
     right: 2%;
     transform: scale(0);
 }
@@ -69,27 +66,10 @@ body{
     left: 5%;
     transform: scale(0);
 }
-/* animation: love1 5s infinite ease-in 1s; */
-/* @keyframes love1{
-    0%{
-        opacity: 0;
-        transform: scale(0.2) rotate(0deg) translate3d(100px, 0, 0);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: scale(0.8) rotate(-40deg) translate3d(-50px, -400px, 0);
-    }
-} */
 @keyframes heartScale{
     0%{
         transform: scale(0);
     }
-    /* 30%{
-        transform: scale(1.5);
-    } */
     50%,100%{
         transform: scale(1.5);
     }
@@ -238,30 +218,10 @@ body{
     font-size: 20px;
     text-transform: uppercase;
 }
-.loading h2 .cricle1, .cricle2, .cricle3{
+.loading h2 {
     /* color: rgb(244,118,121); */
     color: black;
     opacity: 0;
-}
-.cricle1{
-    animation: 1s 1.6s cricle linear infinite;
-}
-.cricle2{
-    animation: 1s 1.7s cricle linear infinite;
-}
-.cricle3{
-    animation: 1s 1.8s cricle linear infinite;
-}
-@keyframes cricle{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
 }
 .button{
     position: relative;
