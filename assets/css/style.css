@@ -161,7 +161,6 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -170,7 +169,6 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -179,7 +177,6 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -188,7 +185,6 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -197,7 +193,6 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -214,14 +209,24 @@ body{
     font-family: 'Roboto', sans-serif;
     /* color: rgb(244,118,121); */
     color: black;
-    font-family: 500;
     font-size: 20px;
     text-transform: uppercase;
 }
-.loading h2 .cricle1, .cricle2, .cricle3 {//must have cricle to show animation
+.loading h2 .cricle1, .cricle2, .cricle3{
     /* color: rgb(244,118,121); */
     color: black;
     opacity: 0;
+}
+@keyframes cricle{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 .button{
     position: relative;

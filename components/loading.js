@@ -42,10 +42,10 @@ function progressInterva(){
         textBox.style.transform = "scale(1.3)"
         heartItem8.style.animation = "1s heartScale forwards"
         setTimeout(()=>{
-            textBox.style.transform = "scale(0)"
+            textBox.style.transform = "scale(0)";
         },400)
         setTimeout(()=>{
-            textBox.style.opacity = "0"
+            textBox.style.opacity = "0";
         },600)
         setTimeout(()=>{
             button.style.transform= "scale(1)";

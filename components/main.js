@@ -192,3 +192,23 @@ document.querySelector(".fa-xmark").addEventListener("click", function(){
     clearInterval(timoutTextLetterContent)
     $(".wrapperLetterForm").fadeOut()
 })
+// Get a reference to the audio element
+const audio = document.getElementById('backgroundAudio');
+
+// Check if the audio is enabled or disabled in the local storage
+const isAudioEnabled = localStorage.getItem('isAudioEnabled') !== 'false';
+
+// Function to toggle audio
+function toggleAudio() {
+    if (isAudioEnabled) {
+        audio.pause();
+    } else {
+        audio.play();
+    }
+    localStorage.setItem('isAudioEnabled', !isAudioEnabled);
+}
+
+// Initialize audio state
+if (isAudioEnabled) {
+    audio.play(); // Start audio if it was enabled
+}
