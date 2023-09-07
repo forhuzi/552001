@@ -218,7 +218,7 @@ body{
     font-size: 20px;
     text-transform: uppercase;
 }
-.loading h2 {
+.loading h2 .cricle1, .cricle2, .cricle3 {//must have cricle to show animation
     /* color: rgb(244,118,121); */
     color: black;
     opacity: 0;
