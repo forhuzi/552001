@@ -2,7 +2,7 @@ let countdownInterval; // Variable to store the interval ID
 
 // Function to calculate the time remaining until the target date
 function calculateTimeRemaining() {
-    const targetDate = new Date("9/13/2023 18:42:00").getTime();
+    const targetDate = new Date("5/5/2024 00:00:00").getTime();
     const currentDate = new Date().getTime();
     const timeRemaining = targetDate - currentDate;
 
