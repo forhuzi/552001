@@ -1,0 +1,24 @@
+.sound-button {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    padding: 10px;
+    z-index: 99;
+}
+.sound-button img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Make it spin continuously */
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
