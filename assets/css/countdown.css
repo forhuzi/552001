@@ -35,3 +35,8 @@ h1 div {
     border-radius: 5px;
     z-index: 9998;
 }
+
+.device-notification {
+    position: fixed;
+    bottom: 10px;
+}
