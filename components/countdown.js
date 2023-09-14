@@ -8,7 +8,7 @@ function calculateTimeRemaining() {
     if (timeRemaining <= 0) {
         const h1a = document.querySelector('h1 a');
         const h1div = document.querySelector('h1 div');
-        h1a.href = 'http://jurmy.life/firststep';
+        h1a.href = './firststep';
         h1a.textContent = 'A small gift for huzi';
         h1div.textContent = 'Please click the link below';
         timeRemaining = 0;
