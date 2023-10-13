@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{margin:0;padding:0;background:#fff;font-size:14px;font-family:'Dancing Script', cursive;color:#231F20;}
+a {color:#000;font-size:14px;}
+#main{width:100%;}
+#wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:0px;}
+#text{width:400px;height:425px;left:60px;top:80px;position:absolute;}
+#code{display:none;font-size:24px;}
+#clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
+#clock-box a {font-size:28px;text-decoration:none;}
+#clock{margin-left:48px;}
+#clock .digit {font-size:64px;}
+#canvas{margin:0 auto;width:1100px;height:680px;}
+#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+.hand{cursor:pointer;}
+.say{margin-left:5px;}
+.space{margin-right:150px;}
+.birthdayCard {
+    right: 32px;
+    top: 200px;
+    position: relative;
+    width: 500px;
+    height:300px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+    
+  }
+  
+  .birthdayCard.initial-state {
+    /* Initial styles without hover effect */
+    transform: none; /* Add the initial transform here */
+    box-shadow: none; /* Add the initial box-shadow here */
+    cursor: default;
+  }
+  
+  .birthdayCard:hover {
+    /* No hover effect in the initial state */
+  }
+  
+  .birthdayCard:hover .cardFront {
+    /* No hover effect in the initial state */
+  }
+  
+  .birthdayCard:hover .happy {
+    /* No hover effect in the initial state */
+  }
+  
+  .birthdayCard.trigger-hover:hover {
+    /* Define the hover effect when the card is triggered */
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  
+  .birthdayCard.trigger-hover:hover .cardFront {
+    transform: rotateY(-160deg);
+  }
+  
+  .birthdayCard.trigger-hover:hover .happy {
+    visibility: hidden;
+  }
+  
+  .cardFront {
+    background-image: url(../image/flower2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    /* background-color: #fff; */
+    width: 500px;
+    height:300px;
+    overflow: hidden;
+    transform-origin: left;
+    /* box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4); */
+    transition: .6s;
+  }
+  
+  .happy {
+    font-family:'Dancing Script', cursive;
+    color: #e0a2c7;
+    text-align: center;
+    margin:30px; 
+    background-image: linear-gradient(120deg, #fff 0%, #fff 100%);
+    transition: .1s;
+  }
+
+  .cardInside {
+    /* background-image: url(../image/flower2.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    height:300px;
+    z-index:-1;
+    left:1px;
+    top:0;
+  }
+  .back {
+    font-family:'Dancing Script', cursive;
+    color: #e0a2c7;
+    text-align: center;
+    margin:30px;
+    outline-color:#333;
+    outline-style: dotted;
+  }
+
+  .container {
+    position: relative;
+  }
+  .valentines {
+    position: relative;
+    top:50px;
+    cursor: pointer;
+    animation: up 2s linear infinite;
+  }
+  .shadow {
+    position: absolute;
+    top: 600px;
+    width: 520px;
+    height: 25px;
+    border-radius:50%;
+    background-color: rgba(0,0,0,0.3);
+    left:-40px;
+    animation: scale 2s linear infinite;
+    z-index:-1;
+  }
+  @keyframes up {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes scale {
+    0%, 100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.85);
+    }
+  }
+  .hearts {
+    position: absolute  
+  }
+  
+  .one, .two, .three, .four, .five {
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    width: 10px;
+    top:50px;
+  }
+  
+  .one:before,
+  .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+  }
+  
+  .one:before, .two:before, .three:before, .four:before, .five:before {
+    top: -5px;
+    left: 0;
+  }
+  
+  .one:after, .two:after, .three:after, .four:after, .five:after {
+    left: 5px;
+    top: 0;
+  }
+    
+  .one {
+    left:10px;
+    animation: heart 1s ease-out infinite; 
+  }
+  
+  .two {
+    left:30px;
+    animation: heart 2s ease-out infinite; 
+  }
+  
+  .three {
+    left:50px;
+    animation: heart 1.5s ease-out infinite;
+  }
+  
+  .four {
+    left:70px;
+    animation: heart 2.3s ease-out infinite;
+  }
+  
+  .five {
+    left:90px;
+    animation: heart 1.7s ease-out infinite;
+  }
+  
+  @keyframes heart {
+    0%{
+      transform: translateY(0) rotate(-45deg) scale(0.3);
+      opacity: 1;
+    }
+    100%{
+      transform: translateY(-150px) rotate(-45deg) scale(1.3);
+      opacity: 0.5;
+    }
+  }
+  
