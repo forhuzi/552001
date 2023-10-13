@@ -116,7 +116,7 @@ a {color:#000;font-size:14px;}
     position: relative;
     top: 50px;
     cursor: pointer;
-    animation: up 2s linear infinite;
+    animation: up 2990ms linear infinite;
     cursor:default;
 }
 
@@ -128,7 +128,7 @@ a {color:#000;font-size:14px;}
     border-radius:50%;
     background-color: rgba(0,0,0,0.3);
     left:-40px;
-    animation: scale 2s linear infinite;
+    animation: scale 3s linear infinite;
     z-index:-1;
     display: none;
   }
