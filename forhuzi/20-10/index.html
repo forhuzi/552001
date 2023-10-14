@@ -30,15 +30,15 @@
                                     <div class="cardInside">
                                         <font color="#666666">
                                             <span class="say" ><br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░█░▄█▄░█▀▄░█▀▄░█░█░░█░█░█░▄▀▀░▀█▀░█░░░█░▄█▄░█▄░▄█░▄▀▀░▄▀▀░▄▀▀<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █▄█░█░█░█░█░█░█░█░█░░█░█░█░█░░░░█░░█▀▄░█░█░█░█░█░█░█░░░▀▄░░█<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░█░█▀█░█▀░░█▀░░░█░░░█░█░█░█▀░░░█░░█░▀▄█░█▀█░█░░░█░█▀░░░▀▄░█▀<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░█░█░█░█░░░█░░░░█░░░▀▄▀░█░▀▄▄░░█░░█░░░█░█░█░█░░░█░▀▄▄░▄▄▀░▀▄▄<br>
+ █░█░▄█▄░█▀▄░█▀▄░█░█░░█░█░█░▄▀▀░▀█▀░█░░░█░▄█▄░█▄░▄█░▄▀▀░▄▀▀░▄▀▀<br>
+ █▄█░█░█░█░█░█░█░█░█░░█░█░█░█░░░░█░░█▀▄░█░█░█░█░█░█░█░░░▀▄░░█<br>
+ █░█░█▀█░█▀░░█▀░░░█░░░█░█░█░█▀░░░█░░█░▀▄█░█▀█░█░░░█░█▀░░░▀▄░█▀<br>
+ █░█░█░█░█░░░█░░░░█░░░▀▄▀░█░▀▄▄░░█░░█░░░█░█░█░█░░░█░▀▄▄░▄▄▀░▀▄▄<br>
 <br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░░░█░▄▀▄░█▄░▄█░▄▀▀░█░░░█░█░▄▀▀░░█▀▄░▄█▄░█░█<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░░░█░█░█░█░█░█░█░░░█▀▄░█░░░▀▄░░░█░█░█░█░█░█<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp █░▄░█░█░█░█░░░█░█▀░░█░▀▄█░░░░▀▄░░█░█░█▀█░░█<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ▀█▀█▀░▀▄▀░█░░░█░▀▄▄░█░░░█░░░▄▄▀░░█▄▀░█░█░░█<br>
+ █░░░█░▄▀▄░█▄░▄█░▄▀▀░█░░░█░█░▄▀▀░░█▀▄░▄█▄░█░█<br>
+ █░░░█░█░█░█░█░█░█░░░█▀▄░█░░░▀▄░░░█░█░█░█░█░█<br>
+ █░▄░█░█░█░█░░░█░█▀░░█░▀▄█░░░░▀▄░░█░█░█▀█░░█<br>
+ ▀█▀█▀░▀▄▀░█░░░█░▀▄▄░█░░░█░░░▄▄▀░░█▄▀░█░█░░█<br>
                                             </span><br>
                                             <span class="say"> I made this to give it to the princess who is reading </span><br>
                                             <span class="say"> </span><br>
@@ -155,26 +155,26 @@
             }
             while (seed.canScale()) {
                 seed.scale(0.95);
-                $await(Jscex.Async.sleep(1));
+                $await(Jscex.Async.sleep(10));
             }
             while (seed.canMove()) {
                 seed.move(0, 3);
                 foot.draw();
-                $await(Jscex.Async.sleep(1));
+                $await(Jscex.Async.sleep(10));
             }
         }));
 
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
     	        tree.grow();
-                $await(Jscex.Async.sleep(1));
+                $await(Jscex.Async.sleep(10));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
     	        tree.flower(2);
-                $await(Jscex.Async.sleep(1));
+                $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
 
@@ -182,7 +182,7 @@
             tree.snapshot("p1", 240, 0, 610, 680);
             while (tree.move("p1", 516, 0)) {
                 foot.draw();
-                $await(Jscex.Async.sleep(1));
+                $await(Jscex.Async.sleep(10));
             }
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
