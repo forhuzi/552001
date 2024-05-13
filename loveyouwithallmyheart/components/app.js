@@ -46,7 +46,7 @@
             ]] 
         ],
         bloom: {
-            num: 2000,
+            num: 2007,
             width: 1080,
             height: 650,
         },

@@ -30,7 +30,16 @@ a {color:#000;font-size:14px;}
 #code .say:nth-child(23),
 #code .say:nth-child(24),
 #code .say:nth-child(25),
-#code .say:nth-child(26)
+#code .say:nth-child(26),
+#code .say:nth-child(27),
+#code .say:nth-child(28),
+#code .say:nth-child(29),
+#code .say:nth-child(30),
+#code .say:nth-child(31),
+#code .say:nth-child(32),
+#code .say:nth-child(33),
+#code .say:nth-child(34),
+#code .say:nth-child(35)
 {font-size: 24px;}
 #code span:first-child {color: #553083;}  
 #canvas{margin:0 auto;width:1100px;height:680px;background-color: #f2efed;}
@@ -38,7 +47,7 @@ a {color:#000;font-size:14px;}
 .hand{cursor:pointer;}
 .say{margin-left:5px;}
 .space{margin-right:150px;}
-._2010Card {right: 32px;top: 80px;position: relative;width: 500px;height:470px;cursor: pointer;transform-style: preserve-3d;transform: perspective(2500px);transition: 0.1s;}
+._2010Card {right: 32px;top: 80px;position: relative;width: 500px;height:600px;cursor: pointer;transform-style: preserve-3d;transform: perspective(2500px);transition: 0.1s;}
 ._2010Card.initial-state {transform: none; box-shadow: none;cursor: default;}
 ._2010Card:hover{}
 ._2010Card:hover .cardFront{}
@@ -55,10 +64,10 @@ a {color:#000;font-size:14px;}
 .cardFront {
     text-align: center;
     font-size: 24px;
-    background-image: url(../img/lavender.jpg);background-repeat: no-repeat;background-size: 100% 100%;position: relative;width: 500px;height:470px; overflow: hidden;transform-origin: right;transition: 0.1s;z-index: 92;}  
-.cardInside {position: absolute; background-color: #fcfafa;width: 500px;height:470px;z-index:90;top:0;}
+    background-image: url(../img/lavender.jpg);background-repeat: no-repeat;background-size: 100% 100%;position: relative;width: 500px;height:600px; overflow: hidden;transform-origin: right;transition: 0.1s;z-index: 92;}  
+.cardInside {position: absolute; background-color: #fcfafa;width: 500px;height:600px;z-index:90;top:0;}
 .container {position: relative;}
-._2010 {position: relative;top: 50px;cursor: pointer;animation: up 3200ms linear infinite;cursor:default;}
+._2010 {position: relative;top: -85px;cursor: pointer;animation: up 3200ms linear infinite;cursor:default;}
 .shadow {position: absolute;top: 600px;width: 520px;height: 25px;border-radius: 50%;background-color: rgba(0, 0, 0, 0.3);left: -40px;animation: scale 3s linear infinite;z-index: -1;display: none;transition: width 0.2s; /* Add a transition for the width property */}
 @keyframes scale {0%, 100% {transform: scaleX(1);}50% {transform: scaleX(0.85);}}
 @keyframes up {0%, 100% {transform: translateY(0);}50% {transform: translateY(-30px);}}
@@ -69,8 +78,8 @@ font {
     position: absolute;
     border-radius: 100%;
     top: 130px;
-    right: 30px;
-    width: 120px;
+    right: 45px;
+    width: 110px;
     z-index: 91;
     animation-name: spin;
     animation-duration: 10s;
@@ -88,4 +97,11 @@ font {
 .open-remind {
     color: #ffc83d;
     margin-top: 20px;
+}
+
+#q {
+    margin-left: 40px;
+}
+#g {
+    margin-left: 60px;
 }
