@@ -169,7 +169,7 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px Dancing Script, cursive";
-            ctx.fillText("Nhấn trái tim", 22, 13);
+            ctx.fillText("Nhấn vào trái tim", 22, 13);
             ctx.restore();
         },
         clear: function() {

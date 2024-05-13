@@ -46,7 +46,7 @@
             ]] 
         ],
         bloom: {
-            num: 1000,
+            num: 2000,
             width: 1080,
             height: 650,
         },
@@ -148,7 +148,7 @@
         $("#code").show().typewriter();
         while (true) {
             timeElapse(together);
-            $await(Jscex.Async.sleep(1000));
+            $await(Jscex.Async.sleep(100));
         }
     }));
     var runAsync = eval(Jscex.compile("async", function () {
