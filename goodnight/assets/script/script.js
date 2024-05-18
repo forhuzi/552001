@@ -27,7 +27,7 @@ function updateBackground(media) {
         if (media.matches) {
             $('body').css(
                 {
-                    "background-image": "url(/goodnight/assets/img/nightSky.jpg)",
+                    "background-image": "url(./assets/img/nightSky.jpg)",
                     "background-repeat": "none",
                     "background-size": "100% 220px"
                 }
@@ -35,7 +35,7 @@ function updateBackground(media) {
         } else {
             $('body').css(
                 {
-                    "background-image": "url(/goodnight/assets/img/nightSky.jpg)",
+                    "background-image": "url(./assets/img/nightSky.jpg)",
                     "background-repeat": "none",
                     "background-size": "100% 100%"
                 }
