@@ -35,7 +35,7 @@ function updateBackground(media) {
         } else {
             $('body').css(
                 {
-                    "background-image": "url(../assets/img/nightSky.jpg)",
+                    "background-image": "url(/goodnight/assets/script/script.js)",
                     "background-repeat": "none",
                     "background-size": "100% 100%"
                 }
