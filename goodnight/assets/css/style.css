@@ -1194,13 +1194,14 @@ img {
 
 @media only screen and (max-width: 566px) {
     .speech-bubble {
-        top: -100px;
-        left: 110%;
-        width: 45px;
+        top: -90px;
+        left: 95%;
+        width: 43px;
+        padding: 10px 10px;
     }
 
     .speech-bubble h1 {
-        font-size: 15px;
+        font-size: 12px;
     }
     
     .speech-bubble:after {
@@ -1219,6 +1220,7 @@ img {
     }
 
     .clickBaymax {
+        top: -75px;
         font-size: 15px;
     }
 }
