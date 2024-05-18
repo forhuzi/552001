@@ -8,7 +8,39 @@ document.querySelector("#btn").onclick = function (){
     if (audio.paused) {
         audio.play();
     }
-    document.querySelector("#btn").style.display='none';
-    document.querySelector(".christmas").style.display='block';
-    // document.querySelector("#body").style.background="#de2f32";
+    $('#btn').hide();
+    $('.loadingLove').fadeIn('slow', function() {
+        setTimeout(function() {
+            $('.loadingLove').fadeOut('fast', function() {
+                updateBackground(media);
+                $('.christmas').fadeIn('slow');
+            });
+        }, 2000);
+    });
 }
+
+function updateBackground(media) {
+    if (media.matches) {
+        $('body').css(
+            {
+                "background-image": "url(../assets/img/nightSky.jpg)",
+                "background-repeat": "none",
+                "background-size": "100% 220px"
+            }
+        )
+    } else {
+        $('body').css(
+            {
+                "background-image": "url(../assets/img/nightSky.jpg)",
+                "background-repeat": "none",
+                "background-size": "100% 100%"
+            }
+        )
+    }
+}
+  
+var media = window.matchMedia("(max-width: 480px)");
+
+media.addEventListener("change", function() {
+    updateBackground(media);
+});
