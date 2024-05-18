@@ -1196,12 +1196,12 @@ img {
     .speech-bubble {
         top: -90px;
         left: 95%;
-        width: 43px;
+        width: 35px;
         padding: 10px 10px;
     }
 
     .speech-bubble h1 {
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .speech-bubble:after {
