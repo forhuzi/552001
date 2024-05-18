@@ -6,7 +6,7 @@ var audio = document.getElementById('background-audio');
 
 var loaded = false;
 
-document.querySelector("#btn").onclick = function (){
+document.querySelector(".baymax").onclick = function (){
     if (audio.paused) {
         audio.play();
     }
