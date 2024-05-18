@@ -4,6 +4,8 @@ var audio = document.getElementById('background-audio');
         audio.play();
 });
 
+var loaded = false;
+
 document.querySelector("#btn").onclick = function (){
     if (audio.paused) {
         audio.play();
@@ -12,30 +14,33 @@ document.querySelector("#btn").onclick = function (){
     $('.loadingLove').fadeIn('slow', function() {
         setTimeout(function() {
             $('.loadingLove').fadeOut('fast', function() {
+                loaded = true;
                 updateBackground(media);
                 $('.christmas').fadeIn('slow');
             });
-        }, 2000);
+        }, 5000);
     });
 }
 
 function updateBackground(media) {
-    if (media.matches) {
-        $('body').css(
-            {
-                "background-image": "url(../assets/img/nightSky.jpg)",
-                "background-repeat": "none",
-                "background-size": "100% 220px"
-            }
-        )
-    } else {
-        $('body').css(
-            {
-                "background-image": "url(../assets/img/nightSky.jpg)",
-                "background-repeat": "none",
-                "background-size": "100% 100%"
-            }
-        )
+    if (loaded) {
+        if (media.matches) {
+            $('body').css(
+                {
+                    "background-image": "url(../assets/img/nightSky.jpg)",
+                    "background-repeat": "none",
+                    "background-size": "100% 220px"
+                }
+            )
+        } else {
+            $('body').css(
+                {
+                    "background-image": "url(../assets/img/nightSky.jpg)",
+                    "background-repeat": "none",
+                    "background-size": "100% 100%"
+                }
+            )
+        }
     }
 }
   
