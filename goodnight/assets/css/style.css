@@ -304,8 +304,8 @@ body {
 .message {
     position: absolute;
     left: 50%;
-    top: 65%;
-    margin-top: 110px;
+    top: 50%;
+    margin-top: 130px;
     text-align: center;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
