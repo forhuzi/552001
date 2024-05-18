@@ -44,7 +44,7 @@ function updateBackground(media) {
     }
 }
   
-var media = window.matchMedia("(max-width: 480px)");
+var media = window.matchMedia("(max-width: 566px)");
 
 media.addEventListener("change", function() {
     updateBackground(media);
